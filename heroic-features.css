@@ -1,0 +1,565 @@
+/*!
+ * Start Bootstrap - Heroic Features HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+html{
+    /*height: 100%;*/
+}
+body {
+    padding-top: 40px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-left: 50px;
+    background-color: #f7f8f9;
+}
+.navbar-brand{
+    padding: 7px 5px 5px 5px;
+}
+.navbar-nav li{
+    padding-top:3px;
+}
+.navbar-nav li a{
+    padding-top: 23px;
+}
+.navbar-right{
+    color:white;
+    padding-top: 15px;
+}
+.navbar-right li{
+    padding-left: 5px;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tel{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px;
+    background: url("Images1/telephone.png")
+}
+
+.navbar-nav li:before{
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #6a6f6e;
+    width:85px;
+    height: 1px;
+    top:14px;
+    left: 15px;
+}
+li.firstone:before{
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #6a6f6e;
+    left:15px;
+    width:140px;
+    height: 1px;
+}
+.navbar-nav a:before{
+    display: block;
+    content: '';
+    position: absolute;
+    height: 1px;
+    top:11px;
+    left: 15px;
+    background-color: #6a6f6e;
+    width:0px;
+}
+.navbar-nav a:hover:before {
+    background-color: #ffffff;
+    width: 85px;
+    transition: width 0.8s;
+}
+a.first:hover:before{
+    background-color: #ffffff;
+    width: 146px;
+    transition: width 1s;
+}
+.navbar-right li:before{
+    display: none;
+}
+.container-fluid {
+    width: 100vw;
+}
+.navmenu{
+    width:65px;
+    float:left;
+    height: 100vh;
+    margin-top: 50px;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.catalog{
+   /* background-position: -5px -50px;*/
+    background:url("Images1/catal.png") no-repeat;
+    margin-top:60px;
+    margin-left: 18px;
+}
+.search{
+    background:url("Images1/search.png") no-repeat;
+    margin-top:18px;
+    margin-left: 22px;
+}
+.overview{
+    background: url("Images1/photo-camera.png") no-repeat;
+    margin-top:15px;
+    margin-left: 22px;
+}
+.chat{
+    background:url("Images1/bubble.png") no-repeat;
+    margin-top:14px;
+    margin-left: 22px;
+}
+.basket{
+    background:url("Images1/busket.png") no-repeat;
+    margin-top:15px;
+    margin-left: 22px;
+}
+
+.closed{
+    background:url("Images1/cross1.png") no-repeat;
+   /* margin-top:60px;*/
+    margin-left: 23px;
+}
+.ctlg{
+    position: fixed;
+    top:53px;
+    left:65px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #222222;
+    z-index: 100;
+    padding:50px 40px 0px 40px;
+    display: none;
+    white-space: nowrap;
+}
+.header{
+    color: white;
+}
+.table tbody tr td{
+    border: 0px;
+    padding: 4px 0px 4px 8px;
+}
+.table td{
+    width: 18%;
+}
+.table tbody tr th{
+    border: 0px;
+}
+.table tbody tr th{
+    padding-bottom: 20px;
+}
+.component a{
+    color: #6a6f6e;
+    font-size: 12px;
+}
+.component a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color:#ffcc00;
+    transform: translateX(20px);
+
+}
+.component td:hover{
+   transform: translateX(10px);
+}
+.slideInLeft{
+    animation-duration: .3s;
+}
+.content{
+    padding: 0px;
+    height: 100vh;
+}
+.hero-spacer{
+    background: url("throw01.png");
+    background-position:center -15px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffcc00;
+    margin-top: 0px;
+    width: 100vw;
+}
+@media screen and (max-width: 1199px){
+    .container-fluid .jumbotron{
+        background:url("throw01.png");
+        background-position: center -55px;
+    }
+}
+@media screen and (max-width: 991px){
+    .container-fluid .jumbotron{
+        background:url("throw01.png");
+        background-position: center -30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .container-fluid .jumbotron{
+        background:url("throw01.png");
+        background-position: center -60px;
+    }
+}
+
+h3{
+    padding-left: 50px;
+}
+.text-center{
+    padding-left: 50px;
+}
+hr{
+    padding-left: 50px;
+    width: 100vw;
+}
+.mi-slider{
+    position: relative;
+    width: 900px;
+    margin: -40px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.slidewrp{
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left:0;
+    top:0;
+    list-style-type: none;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 0px;
+}
+.slidewrp li{
+    display: inline-block;
+    max-width: 900px;
+}
+.slidewrp li.mi-current{
+    pointer-events:auto;
+}
+.slideit{
+    position: relative;
+    list-style-type:none;
+    width: 100%;
+    left:0;
+    top:0;
+    overflow: hidden;
+    text-align: center;
+    pointer-events: none;
+    padding: 0px;
+
+}
+
+.slideit li{
+    display:inline-block;
+    width:20%;
+    max-width: 300px;
+    margin: 0px 10px 0px 10px;
+    transition: opacity 0.2s linear;
+
+}
+.slideit li a, .slideit li img{
+    display: block;
+    margin: 0 auto;
+}
+.slideit li a{
+    cursor: pointer;
+    outline:none;
+}
+.slideit li img{
+    max-width: 60%;
+    border:none;
+}
+.apparat li img{
+    max-width: 45%;
+}
+.fpv li img{
+    max-width: 40%;
+}
+.slideit li p{
+    display: block;
+    font-size: 12px;
+    padding: 20px 0px 0;
+    color:#666666;
+    white-space: normal;
+}
+.slideit li p.price{
+    font-weight: bold;
+    color: #f4b615;
+    padding-top:0px;
+    font-size: 14px;
+}
+.slideit li:hover{
+    opacity: 0.7;
+}
+.navigate{
+    position:relative;
+    top:0px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    border-top:5px solid black;
+}
+.navigate a{
+    display:inline-block;
+    position: relative;
+    padding:35px 15px 30px 20px;
+    color:#666666;
+    outline: none;
+    transition: color 0.2s linear;
+}
+.navigate a:hover, .navigate a.mi-selected{
+    color: black;
+    text-decoration: none;
+}
+.navigate a.mi-selected:before,
+.navigate a.mi-selected:after{
+    content: '';
+    position: absolute;
+    top:-5px;
+    border: solid transparent;
+    width: 0px;
+    height: 0px;
+    pointer-events: none;
+}
+.navigate a.mi-selected:after{
+    border-color: transparent;
+    border-top-color: #f7f8f9;
+    border-width: 20px;
+    left:50%;
+    margin-left: -20px;
+}
+.navigate a.mi-selected:before{
+    border-color: transparent;
+    border-top-color: black;
+    border-width: 27px;
+    left:50%;
+    margin-left: -27px;
+    margin-top: 1px;
+}
+
+.mi-slider {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width:910px) {
+    .mi-slider nav{
+        max-width: 90%;
+    }
+    .mi-slider nav a{
+        padding:40px 10px 30px 14px;
+    }
+}
+@media screen and (max-width: 740px){
+    .mi-slider{
+        height: 350px;
+    }
+    .mi-slider nav{
+        top:220px;
+    }
+}
+.slider{
+    position:relative;
+    margin: 20px auto;
+    width: 900px;
+    height: 300px;
+    overflow: hidden;
+
+}
+.slide-list{
+    position:relative;
+    margin-left: -10px;
+    padding: 0;
+}
+
+.slide-wrap {
+    position: relative;
+    width:100vw;
+    left:0;
+    top:0;
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    padding-left:10px;
+
+}
+.slide-item{
+    display:inline-block;
+    width:45%;
+    max-width: 250px;
+    transition: opacity 0.2s linear;
+    margin-left: 35px;
+}
+
+.slide-item p{
+    font-size: 14px;
+    font-weight: bold;
+    display:block;
+    padding:20px 0px 5px 0px;
+    color:#666666;
+    margin-bottom: 0px;
+}
+.slide-item p.price{
+    color:#f4b615;
+    font-weight: bold;
+    padding-top:2px;
+}
+.slide-item p.price del{
+    color:black;
+}
+.slide-item img:hover{
+    opacity: 0.7;
+}
+.slide-item a:hover{
+    text-decoration: none;
+}
+.slide-item p:hover{
+    color:black;
+}
+.imgBig{
+    transform: scale(1.2);
+}
+
+.navy{
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.prev-slide{
+    background: url("Images1/play2.png") no-repeat;
+    left:0;
+    top:70px;
+    /*margin:85px 20px 0px 10px;*/
+}
+.next-slide{
+    background: url("Images1/play1.png") no-repeat;
+    right:0;
+    top:70px;
+    /*margin:85px 65px 0px 0px;*/
+}
+.hero-feature {
+    margin-bottom: 30px;
+    max-width: 70%;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.head{
+    height: 15vw;
+    background: black;
+}
+.index{
+    padding: 0px;
+
+}
+.brand{
+    padding: 7px 5px 5px 45px;
+    height: 50px;
+}
+.contactinf{
+    position: relative;
+    list-style-type: none;
+    color: white;
+    top:40px;
+    left: 50px;
+}
+.contactinf li{
+    display: inline-block;
+    padding-left:80px;
+}
+.closed1{
+    background:url("Images1/cross1.png") no-repeat;
+    float: right;
+    margin-top:20px;
+    margin-right: 15px;
+}
+#map-container{
+    width: 100vw;
+    height: 55vh;
+    padding: 0px;
+    margin-left: -15px;
+}
+.navbottom{
+    margin-left: 175px;
+}
+.navbottom a{
+    color:#6a6f6e;
+}
+.navbottom li a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.navbottom li a:focus {
+    background-color: transparent;
+    color: black;
+}
+.navbottom a:hover:before {
+    background-color: black;
+}
+.navbottom li.active a{
+    color: black;
+}
+.navbottom li.active:before{
+    background-color: black;
+}
+.navright{
+    margin-left: 80vw;
+}
+.navright li {
+    margin-left:10px;
+}
+.navright li a img{
+    padding-right: 10px;
+}
+.prompt{
+    color: #6a6f6e;
+    font-size: 12px;
+    font-weight: bold;
+}
+.navright li a{
+    width:24px;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+.navright li:before{
+    width: 24px;
+}
+
+.navright li a:hover{
+    background-color: transparent;
+    color: black;
+    width: 100px;
+    transition: width 0.8s;
+}
+.navright li a:focus{
+    background-color: transparent;
+}
+.navright li a:hover:before{
+    background-color: black;
+}
+.animated{
+    margin-left: -50px;
+    margin-top:-40px;
+}
+
+
+
+
